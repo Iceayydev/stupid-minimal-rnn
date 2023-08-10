@@ -1,7 +1,11 @@
 import numpy as np
 
+half = "the car goes"
+last = "fast"
+rare = "slow"
+
 # training data!!!!!!!!
-training_data = ["the car goes fast", "the car goes fast", "the car goes fast", "the car goes slow"]
+training_data = [f"{half} {last}", f"{half} {last}", f"{half} {last}", f"{half} {rare}"]
 
 # our preprocessing
 corpus = ' '.join(training_data).lower().split()
