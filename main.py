@@ -5,7 +5,9 @@ last = "fast"
 rare = "slow"
 
 # training data!!!!!!!!
-training_data = [f"{half} {last}", f"{half} {last}", f"{half} {last}", f"{half} {rare}"]
+training1 = ["the car goes slow", "that duck moves slow", "those turtles are fast", "them tires move slow"]
+training2 = [f"{half} {last}", f"{half} {last}", f"{half} {last}", f"{half} {rare}"]
+training_data = training1
 
 # our preprocessing
 corpus = ' '.join(training_data).lower().split()
@@ -130,4 +132,3 @@ print(f"--[  {str(inp_txt)} > {next_word} <  ]--")
 
 if print_specifics ==  True:
     print_specificsdef()
-
