@@ -110,6 +110,7 @@ for epoch in range(epochs):
 
 # get next word
 input_seq = "the car goes"
+inp_txt = input_seq
 input_seq = input_seq.lower().split()
 x = np.zeros((num_words, 1))
 x[[word_to_idx[word] for word in input_seq]] = 1
@@ -121,7 +122,7 @@ probs = np.exp(y_pred) / np.sum(np.exp(y_pred))
 next_word_idx = np.argmax(probs)
 next_word = idx_to_word[next_word_idx]
 
-print(f"the car goes {next_word}")
+print(f"--[  {str(inp_txt)} > {next_word} <  ]--")
 
 if print_specifics ==  True:
     print_specificsdef()
