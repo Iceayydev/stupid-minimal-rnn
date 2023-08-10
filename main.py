@@ -37,7 +37,7 @@ epochs = 100
 print_specifics = False  # turn this on if you wanna see the weights, and hidden state... for some reason.
 
 
-def print_specificsdef():
+def print_specificsdef():  # why would you actually want to see these
     print(f"[hidden state]----------------------------------------------")
     print(h)
     print(f"[hidden size]-----------------------------------------------")
