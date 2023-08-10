@@ -5,7 +5,8 @@ last = "fast"
 rare = "slow"
 
 # training data!!!!!!!!
-training1 = ["the car goes slow", "that duck moves slow", "those turtles are fast", "them tires move slow"]
+training1 = ["the car goes slow", "the car goes slow", "the car goes fast", "the car goes slow", "those ducks are slow",
+             "those ducks are fast", "those ducks are fast", "those ducks are fast"]
 training2 = [f"{half} {last}", f"{half} {last}", f"{half} {last}", f"{half} {rare}"]
 training_data = training1
 
