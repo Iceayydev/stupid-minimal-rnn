@@ -27,7 +27,7 @@ our weights are initialized randomly
 ## training
 
 we're training on 100 epochs here, and i used stochastic gradient descent and categorical cross-entropy loss.
-# stochastic gradient (just so you remember what it is)
+### stochastic gradient (just so you remember what it is)
 - so we can minimize the loss function
 - avoid getting the true gradient using the whole dataset, so we estimate with a bunch of batch samples
 - makes it a bit faster
