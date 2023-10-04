@@ -29,21 +29,6 @@ y = np.array(y)
 hidden_size = 10
 learning_rate = 0.1
 epochs = 100
-print_specifics = False  # turn this on if you wanna see the weights, and hidden state... for some reason.
-
-
-def print_specificsdef():  # why would you actually want to see these
-    print(f"[hidden state]----------------------------------------------")
-    print(h)
-    print(f"[hidden size]-----------------------------------------------")
-    print(hidden_size)
-    print(f"[input to hidden]-------------------------------------------")
-    print(Wxh)
-    print(f"[hidden to hidden]------------------------------------------")
-    print(Whh)
-    print(f"[hidden to output]------------------------------------------")
-    print(Why)
-
 
 # init weights
 Wxh = np.random.randn(hidden_size, num_words) * 0.01
@@ -106,8 +91,6 @@ for epoch in range(epochs):
     # printing epoch and loss
     if epoch % 10 == 0:
         print(f"epoch: {epoch}, loss: {loss}")
-    if print_specifics == True:
-        print_specificsdef()
 
 # get next word
 input_seq = "the car goes"
@@ -124,6 +107,3 @@ next_word_idx = np.argmax(probs)
 next_word = idx_to_word[next_word_idx]
 
 print(f"--[  {str(inp_txt)} > {next_word} <  ]--")
-
-if print_specifics ==  True:
-    print_specificsdef()
