@@ -59,20 +59,6 @@ for cycle in range(model_count):
     hidden_size = 10
     learning_rate = 0.1
     epochs = 100
-    print_specifics = False  # turn this on if you wanna see the weights, and hidden state... for some reason.
-
-
-    def print_specificsdef():
-        print(f"[hidden state]----------------------------------------------")
-        print(h)
-        print(f"[hidden size]-----------------------------------------------")
-        print(hidden_size)
-        print(f"[input to hidden]-------------------------------------------")
-        print(Wxh)
-        print(f"[hidden to hidden]------------------------------------------")
-        print(Whh)
-        print(f"[hidden to output]------------------------------------------")
-        print(Why)
 
 
     def sigmoid(x):
@@ -218,9 +204,7 @@ for cycle in range(model_count):
         if epoch % 10 == 0:
             print(f"epoch: {epoch}, loss: {loss}")
 
-        if print_specifics:
-            print_specificsdef()
-
+    
     # get next word
     input_seq = "the car goes"
     inp_txt = input_seq
@@ -244,6 +228,3 @@ for cycle in range(model_count):
 
     with open(f"{word_path}/result{cycle}.txt", "w") as txtfile:
         txtfile.write(next_word)
-
-    if print_specifics:
-        print_specificsdef()
