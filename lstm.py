@@ -25,13 +25,8 @@ for cycle in range(model_count):
         header = ["epoch","loss"]
         writer.writerow(header)
 
-    half = "the car goes"
-    last = "fast"
-    rare = "slow"
-
     # training data!!!!!!!!
     training1 = ["the car goes fast", "that duck moves fast", "those turtles are fast", "them tires move slow"]
-    training2 = [f"{half} {last}", f"{half} {last}", f"{half} {last}", f"{half} {rare}"]
     training_data = training1
 
     # our preprocessing
